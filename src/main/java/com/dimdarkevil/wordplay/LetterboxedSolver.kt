@@ -30,7 +30,7 @@ class LetterboxedSolver(val puzzle: String, val wordList: List<LetterboxedSolver
     private val usage = """
       usage: letterboxed {puzzle}
       where {puzzle} is in the format ABC,DEF,GHI,JKL
-      example: ./letterboxed GSL,ETI,MNH,URP 
+      example: ./letterboxed RKM,UIC,PHG,NAY 
     """.trimIndent()
     // static function to load the word list. We filter out 2-letter words as well as multi-word entries
     fun load() = BufferedReader(InputStreamReader(LetterboxedSolver::class.java.getResourceAsStream("/words.txt")!!)).use { rdr ->
